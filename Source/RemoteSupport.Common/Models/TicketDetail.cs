@@ -76,8 +76,8 @@ namespace Microsoft.Teams.Apps.RemoteSupport.Common.Models
         /// Gets or sets the  UTC date and time the ticket was closed.
         /// </summary>
         [IsSortable]
-        [JsonProperty("ClosedOn")]
-        public DateTimeKind? ClosedOn { get; set; }
+        [JsonProperty("ClosedOnWhen")]
+        public DateTimeKind? ClosedOnWhen { get; set; }
 
         /// <summary>
         /// Gets or sets the display name of the user who closed the ticket.
