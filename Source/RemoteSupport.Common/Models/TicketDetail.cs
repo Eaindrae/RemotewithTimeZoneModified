@@ -50,7 +50,7 @@ namespace Microsoft.Teams.Apps.RemoteSupport.Common.Models
         [IsSearchable]
         [IsFilterable]
         [JsonProperty("AssignedOn")]
-        public DateTime? AssignedOn { get; set; }
+        public DateTimeKind? AssignedOn { get; set; }
 
         /// <summary>
         /// Gets or sets the AAD object id of the assigned SME currently working on the ticket.
@@ -77,7 +77,7 @@ namespace Microsoft.Teams.Apps.RemoteSupport.Common.Models
         /// </summary>
         [IsSortable]
         [JsonProperty("ClosedOn")]
-        public DateTime? ClosedOn { get; set; }
+        public DateTimeKind? ClosedOn { get; set; }
 
         /// <summary>
         /// Gets or sets the display name of the user who closed the ticket.
