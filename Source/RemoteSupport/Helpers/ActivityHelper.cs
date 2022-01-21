@@ -153,7 +153,7 @@ namespace Microsoft.Teams.Apps.RemoteSupport.Helpers
                 case ChangeTicketStatus.CloseAction:
                     ticketData.TicketStatus = (int)TicketState.Closed;
                     ticketData.ClosedByName = message.From.Name;
-                    ticketData.ClosedOnWhen = DateTimeKind.Local;
+                    ticketData.ClosedOnWhen = DateTime.Now;
                     smeNotification = localizer.GetString("SmeClosedStatus", message.From.Name);
                     userNotification = MessageFactory.Text(localizer.GetString("ClosedTicketUserNotification", ticketData.TicketId));
                     break;
@@ -161,7 +161,7 @@ namespace Microsoft.Teams.Apps.RemoteSupport.Helpers
                 case ChangeTicketStatus.AssignToSelfAction:
                     ticketData.TicketStatus = (int)TicketState.Assigned;
                     ticketData.AssignedToName = message.From.Name;
-                    ticketData.AssignedOn = DateTimeKind.Local;
+                    ticketData.AssignedOn = DateTime.Now;
                     ticketData.AssignedToObjectId = message.From.AadObjectId;
                     ticketData.ClosedOnWhen = null;
                     smeNotification = localizer.GetString("SmeAssignedStatus", message.From.Name);
