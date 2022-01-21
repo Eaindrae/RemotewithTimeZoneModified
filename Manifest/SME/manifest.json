@@ -5,10 +5,10 @@
   "id": "78f1b2b2-d7d8-4e10-ba68-7ad587d3a56e",
   "packageName": "com.microsoft.teams.remotesupport.experts",
   "developer": {
-    "name": "<<Developer name>>",
-    "websiteUrl": "<<WebsiteUrl>>",
-    "privacyUrl": "<<PrivacyUrl>>",
-    "termsOfUseUrl": "<<TermsOfUseUrl>>"
+    "name": "Eaindre Pyone Naing",
+    "websiteUrl": "https://alfaconnections.com/",
+    "privacyUrl": "https://alfaconnections.com/",
+    "termsOfUseUrl": "https://alfaconnections.com/"
   },
   "localizationInfo": {
     "defaultLanguageTag": "en",
@@ -77,7 +77,7 @@
   "accentColor": "#64A2CC",
   "bots": [
     {
-      "botId": "<<Bot id>>",
+      "botId": "18056789-c401-4a27-a5a1-794afc6b9dad",
       "scopes": [
         "team"
       ],
@@ -100,7 +100,7 @@
   ],
   "composeExtensions": [
     {
-      "botId": "<<Bot id>>",
+      "botId": "18056789-c401-4a27-a5a1-794afc6b9dad",
       "canUpdateConfiguration": false,
       "commands": [
         {
@@ -165,6 +165,6 @@
     "messageTeamMembers"
   ],
   "validDomains": [
-    "<<valid domains>>"
+    "EDTimeFormatModifiedRemote.azurewebsites.net"
   ]
 }
