@@ -147,6 +147,6 @@
     "messageTeamMembers"
   ],
   "validDomains": [
-    "EDRemoteLocalTime.azurewebsites.net"
+    "EDLocalTimeRemote.azurewebsites.net"
   ]
 }

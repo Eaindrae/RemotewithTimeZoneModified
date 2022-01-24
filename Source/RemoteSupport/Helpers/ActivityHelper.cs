@@ -143,9 +143,7 @@ namespace Microsoft.Teams.Apps.RemoteSupport.Helpers
                 case ChangeTicketStatus.ReopenAction:
                     ticketData.TicketStatus = (int)TicketState.Unassigned;
                     ticketData.AssignedToName = null;
-                    ticketData.AssignedOn = null;
                     ticketData.AssignedToObjectId = null;
-                    ticketData.ClosedOn = null;
                     smeNotification = localizer.GetString("SmeUnassignedStatus", message.From.Name);
                     userNotification = MessageFactory.Text(localizer.GetString("ReopenedTicketUserNotification", ticketData.TicketId));
                     break;
@@ -153,7 +151,7 @@ namespace Microsoft.Teams.Apps.RemoteSupport.Helpers
                 case ChangeTicketStatus.CloseAction:
                     ticketData.TicketStatus = (int)TicketState.Closed;
                     ticketData.ClosedByName = message.From.Name;
-                    ticketData.ClosedOn = DateTime.Now;
+                    ticketData.ClosedOnWhen = DateTime.Now;
                     smeNotification = localizer.GetString("SmeClosedStatus", message.From.Name);
                     userNotification = MessageFactory.Text(localizer.GetString("ClosedTicketUserNotification", ticketData.TicketId));
                     break;
@@ -163,7 +161,6 @@ namespace Microsoft.Teams.Apps.RemoteSupport.Helpers
                     ticketData.AssignedToName = message.From.Name;
                     ticketData.AssignedOn = DateTime.Now;
                     ticketData.AssignedToObjectId = message.From.AadObjectId;
-                    ticketData.ClosedOn = null;
                     smeNotification = localizer.GetString("SmeAssignedStatus", message.From.Name);
                     userNotification = MessageFactory.Text(localizer.GetString("AssignedTicketUserNotification", ticketData.TicketId));
                     break;
