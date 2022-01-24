@@ -50,7 +50,7 @@ namespace Microsoft.Teams.Apps.RemoteSupport.Common.Models
         [IsSearchable]
         [IsFilterable]
         [JsonProperty("AssignedOn")]
-        public DateTime? AssignedOn { get; set; }
+        public DateTime AssignedOn { get; set; }
 
         /// <summary>
         /// Gets or sets the AAD object id of the assigned SME currently working on the ticket.
