@@ -77,7 +77,7 @@
   "accentColor": "#64A2CC",
   "bots": [
     {
-      "botId": "18056789-c401-4a27-a5a1-794afc6b9dad",
+      "botId": "abe1c3ea-8bb1-4b68-9b6b-cd7a8a059881",
       "scopes": [
         "personal"
       ],
@@ -100,7 +100,7 @@
   ],
   "composeExtensions": [
     {
-      "botId": "18056789-c401-4a27-a5a1-794afc6b9dad",
+      "botId": "abe1c3ea-8bb1-4b68-9b6b-cd7a8a059881",
       "canUpdateConfiguration": false,
       "commands": [
         {
@@ -147,6 +147,6 @@
     "messageTeamMembers"
   ],
   "validDomains": [
-    "EDTimeFormatModifiedRemote.azurewebsites.net"
+    "EDRemoteLocalTime.azurewebsites.net"
   ]
 }
